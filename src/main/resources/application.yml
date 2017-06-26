@@ -1,0 +1,22 @@
+server:
+  port: 8080
+  context-path: /elsie-deetect
+
+endpoints:
+  refresh:
+    enabled: true
+  restart:
+    enabled: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${EUREKA_ADVERTISED_HOST_NAME:localhost}:8081/eureka/
+    healthcheck:
+          enabled: true
+
+management:
+  security:
+    enabled: false
+
+debug: false
