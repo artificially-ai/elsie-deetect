@@ -8,7 +8,9 @@ RUN git clone https://github.com/ekholabs/elsie-deetect
 WORKDIR elsie-deetect
 RUN ./gradlew clean build
 
-EXPOSE 8080
+ENV ELSIE_DEETECT_PORT=8080
+
+EXPOSE $ELSIE_DEETECT_PORT
 
 ENTRYPOINT ["java"]
 CMD ["-server", "-Xmx1G", "-jar", "build/libs/elsie-deetect-1.0-SNAPSHOT.jar"]
