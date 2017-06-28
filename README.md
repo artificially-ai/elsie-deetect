@@ -32,4 +32,4 @@ identified in the body. The example below depicts the process:
 
 That's all.
 
-Please, make sure that Eureka and the Configuration Service (which centrilises application properties) are running. Check the [Elsie-Dee Microservices](https://github.com/ekholabs/elsie-dee-microservices) to get more details.
+Please, make sure that Eureka and the Configuration Service (which centrilises application properties) are running. Check the [Elsie-Dee Microservices](https://github.com/ekholabs/elsie-dee-microservices) for more details.
