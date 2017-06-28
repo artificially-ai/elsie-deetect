@@ -22,3 +22,12 @@ In a dependency order priority, the Configuration Service should be started befo
 # Running the Docker Container
 
 * ```docker run -d -p 8080:8080 --link configuration-service --link eureka-service --name=elsie-deetect ekholabs/elsie-deetect```
+
+# Identifying Languages
+
+With Elsie-Deetect it is pretty easy to identify the language based on the text. Simply call a rest endpoint with the text you want
+identified in the body. The example below depicts the process:
+
+* ```curl -X POST -d "I would like to know which language something: which language is this?" http://localhost:8080/identify```
+
+That's all.
