@@ -28,6 +28,8 @@ In a dependency order priority, the Configuration Service should be started befo
 With Elsie-Deetect it is pretty easy to identify the language based on the text. Simply call a rest endpoint with the text you want
 identified in the body. The example below depicts the process:
 
-* ```curl -X POST -d "I would like to know which language something: which language is this?" http://localhost:8080/identify```
+* ```curl -X POST -d "I would like to ask something: which language is this?" http://localhost:8080/identify```
 
 That's all.
+
+Please, make sure that Eureka and the Configuration Service (which centrilises application properties) are running. Check the [Elsie-Dee Microservices](https://github.com/ekholabs/elsie-dee-microservices) to get more details.
