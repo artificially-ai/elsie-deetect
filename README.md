@@ -30,6 +30,10 @@ identified in the body. The example below depicts the process:
 
 * ```curl -X POST -d "I would like to ask something: which language is this?" http://localhost:8080/identify```
 
+Or with Postman:
+
+[Postman screenshot](https://github.com/ekholabs/elsie-deetect/blob/master/src/test/resources/elsie-deetect-postman.png)
+
 That's all.
 
 Please, make sure that Eureka and the Configuration Service (which centrilises application properties) are running. Check the [Elsie-Dee Microservices](https://github.com/ekholabs/elsie-dee-microservices) for more details.
