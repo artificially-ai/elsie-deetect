@@ -32,7 +32,7 @@ identified in the body. The example below depicts the process:
 
 Or with Postman:
 
-[Postman screenshot](https://github.com/ekholabs/elsie-deetect/blob/master/src/test/resources/elsie-deetect-postman.png)
+![alt tag](src/test/resources/elsie-deetect-postman.png)
 
 That's all.
 
