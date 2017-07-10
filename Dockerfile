@@ -11,4 +11,4 @@ ENV CONFIGURATION_SERVER_HOST_NAME=configuration-service
 EXPOSE $ELSIE_DEETECT_PORT
 
 ENTRYPOINT ["java"]
-CMD ["-server", "-Xmx1G", "-jar", "elsie-deetectjar"]
+CMD ["-server", "-Xmx1G", "-jar", "elsie-deetect.jar"]
