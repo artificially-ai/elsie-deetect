@@ -6,9 +6,10 @@ COPY build/libs/elsie-deetect-1.0-SNAPSHOT.jar /ekholabs/elsie-deetect.jar
 
 WORKDIR ekholabs
 
-ENV ELSIE_DEETECT_PORT=8080
 ENV CONFIGURATION_SERVER_HOST_NAME=configuration-service
-EXPOSE $ELSIE_DEETECT_PORT
+ENV CONFIGURATION_SERVER_PORT=8082
+EXPOSE $CONFIGURATION_SERVER_HOST_NAME
+EXPOSE $CONFIGURATION_SERVER_PORT
 
 ENTRYPOINT ["java"]
 CMD ["-server", "-Xmx1G", "-jar", "elsie-deetect.jar"]
