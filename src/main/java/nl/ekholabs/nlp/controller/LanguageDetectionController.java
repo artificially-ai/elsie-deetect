@@ -20,8 +20,8 @@ public class LanguageDetectionController {
     this.languageDetectionService = languageDetectionService;
   }
 
-  @PostMapping(consumes = TEXT_PLAIN_VALUE, produces = APPLICATION_JSON_UTF8_VALUE)
-  public Language identify(@RequestBody final String text) {
+  @PostMapping(path = "/idLanguage", consumes = TEXT_PLAIN_VALUE, produces = APPLICATION_JSON_UTF8_VALUE)
+  public Language idLanguage(@RequestBody final String text) {
     final String language = languageDetectionService.identifyLanguage(text);
     return new Language(language);
   }

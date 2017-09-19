@@ -33,7 +33,7 @@ public class LanguageDetectionControllerTest {
     final String content = "If you just want the body of the xhtml document, without the header, you can chain together a "
         + "BodyContentHandler and a ToXMLContentHandler as shown:";
 
-    final RequestBuilder request = post("/identify")
+    final RequestBuilder request = post("/idLanguage")
         .contentType(MediaType.TEXT_PLAIN_VALUE)
         .content(content);
 
@@ -54,7 +54,7 @@ public class LanguageDetectionControllerTest {
         + " Com Liga da Justiça e Mulher-Maravilha, a marca pode fazer uma apresentação histórica! Confira o OmeleTV sobre o assunto"
         + " e comente conosco!";
 
-    final RequestBuilder request = post("/identify")
+    final RequestBuilder request = post("/idLanguage")
         .contentType(MediaType.TEXT_PLAIN_VALUE)
         .content(content);
 
@@ -75,7 +75,7 @@ public class LanguageDetectionControllerTest {
         + " 21 e il prossimo futuro. Il capitano della \"Rojita\" cercherà di guidare i compagni al successo contro la Germania e"
         + " prima o dopo la partita conoscerà il suo destino. ";
 
-    final RequestBuilder request = post("/identify")
+    final RequestBuilder request = post("/idLanguage")
         .contentType(MediaType.TEXT_PLAIN_VALUE)
         .content(content);
 
